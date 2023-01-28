@@ -34,7 +34,7 @@
 * {
     box-sizing: border-box;
     font-family: "Poppins-Regular";
-    z-index: 1;
+    z-index: 2;
 }
 
 html { 
