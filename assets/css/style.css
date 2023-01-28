@@ -2,28 +2,28 @@
 
 @font-face {
     font-family: 'Poppins-SemiBold';
-    src: url('/assets/fonts/Poppins/Poppins-SemiBold.ttf');
+    src: url('./../fonts/Poppins/Poppins-SemiBold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins-Regular';
-    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf');
+    src: url('./../fonts/Poppins/Poppins-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins-Bold';
-    src: url('/assets/fonts/Poppins/Poppins-Bold.ttf');
+    src: url('./../fonts/Poppins/Poppins-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins-ExtraBold';
-    src: url('/assets/fonts/Poppins/Poppins-ExtraBold.ttf');
+    src: url('./../fonts/Poppins/Poppins-ExtraBold.ttf');
     font-weight: normal;
     font-style: normal;
 }
