@@ -75,6 +75,10 @@ a {
 }
 
 
+.col-4{
+    flex-basis: 33.3%;
+}
+
 .col-6{
     flex-basis: 50%;
 }
@@ -99,6 +103,10 @@ a {
     .col-md-6{
         flex-basis: 50%;
     }
+    
+    .col-md-3{
+        flex-basis: 25%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -120,8 +128,27 @@ a {
     gap: 30px;
 }
 
+.my-0{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.my-3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.my-5{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .ml-0 {
     margin-left: 0;
+}
+
+.mr-0 {
+    margin-right: 0;
 }
 
 .mt-auto {
@@ -130,6 +157,28 @@ a {
 
 .mb-auto{
     margin-bottom: auto;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+.p-2{
+    padding: 20px;
+}
+
+.p-3{
+    padding: 30px;
+}
+
+.py-0{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .py-1{
@@ -216,6 +265,10 @@ a {
     font-family: "Poppins-Bold"
 }
 
+.font-light-gray{
+    color: #808080
+}
+
 .img-responsive{
     max-width: 100%;
     width: 100%;
@@ -234,8 +287,16 @@ a {
     display: inline-block;
 }
 
+.block {
+    display: block;
+}
+
 .flex{
     display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
 }
 
 .flex-wrap{
@@ -254,6 +315,11 @@ a {
     justify-content: space-between;
 }
 
+
+.flex-align-start{
+    align-items: flex-start;
+}
+
 .flex-align-center{
     align-items: center;
 }
@@ -270,10 +336,17 @@ a {
     text-align: left;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .text-uppercase{
     text-transform: uppercase
 }
 
+.font-rg {
+    font-size: 1.5em;
+}
 .font-lg{
     font-size: 2em; 
 }
@@ -462,9 +535,58 @@ section {
     position: relative;
 }
 
+#trendings .down-icon {
+    bottom: -15px;
+}
 /* Good */
 #good {
     background: #F1F1F1
+}
+
+#good #content h1 {
+    line-height: 1;
+    border-top: 7px solid #000;
+    border-bottom: 7px solid #000;
+}
+
+#good .clothes {
+    right: -50px;
+    bottom: -100px;
+}
+
+/* FAQs */
+#faqs{
+    background: #D6D6D6;
+}
+
+/* Testimonials */
+#testimonials {
+    background: #D6D6D6
+}
+
+/* Newsletter */
+#newsletter{
+    background: #000;
+}
+
+#newsletter *{
+    color: #FFF;
+}
+
+#newsletter h1 {
+    line-height: 1;
+    border-top: 7px solid #FFF;
+    border-bottom: 7px solid #FFF;
+}
+
+#newsletter .forms input{
+    border: 1px solid #FFF;
+    background: 0;
+}
+
+#newsletter .forms button{
+    border-radius: 30px;
+    color: #000;
 }
 
 /* Credits */
