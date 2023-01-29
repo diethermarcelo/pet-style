@@ -12,7 +12,8 @@
     </head>
     <body>
         <header>
-            <div id="nav-icon-down">
+            <div id="nav-icon-down" class="absolute">
+                <img src="./assets/img/Dropdown.png" alt="">
             </div>
             <div class="container flex flex-between">
                 <nav>
@@ -33,9 +34,9 @@
                     <div id="landing-title" class="col-lg mb-auto">
                         <h1 class="font-xxl"> Pet Style </h1>
                         <p class="bold"> For your cats & dogs </p>
-                        <div id="landing-title-images"> 
-                            <img src="./assets/img/Brown-Cloth-1.png" alt="Brown Cloth Fashion" class="img-responsive">
-                            <img src="./assets/img/Blue-Cloth-1.png" alt="Blue Cloth Fashion" class="img-responsive">
+                        <div id="landing-title-images" class="flex"> 
+                            <img src="./assets/img/Brown-Cloth-Landing.png" alt="Brown Cloth Fashion" class="img-responsive brown-cloth">
+                            <img src="./assets/img/Blue-Cloth-Landing.png" alt="Blue Cloth Fashion" class="img-responsive blue-cloth">
                         </div>
                     </div>
                     <div id="landing-image" class="col-lg">
@@ -68,7 +69,11 @@
                 <img src="./assets/img/Big-paw.png" alt="Paws">
             </div>
         </section>
-        <section id="trendings" class="main-sections">
+        <section id="trendings" class="main-sections relative">
+            <div class="paws">
+                <img src="./assets/img/Big-paw-05.png" alt="" class="absolute big-paw">
+                <img src="./assets/img/Small-paw-05.png" alt="" class="absolute small-paw">
+            </div>
             <div class="container">
                 <div class="title text-center py-5">
                     <div class="inline-block">
@@ -128,7 +133,7 @@
                 </div>
             </div>
         </section>
-        <section id="good" class="main-sections">
+        <section id="good" class="main-sections relative">
             <div class="container">
                 <div class="row flex-align-center">
                     <div class="col col-md-6">
@@ -140,17 +145,23 @@
                     <div class="col col-md-6 relative">
                         <div class="main-img px-3">
                             <img src="./assets/img/Dog-Good.jpg" alt="Good Dog" class="img-responsive">
-                            <div class="clothes absolute">
-                                <img src="./assets//img/Brown-Cloth-2.png" alt="Brown Cloth">
-                                <img src="./assets/img/White-Cloth-2.png" alt="White Cloth">
+                            <div class="clothes absolute flex">
+                                <img src="./assets//img/Brown-Cloth-Good.png" alt="Brown Cloth" class="white-cloth">
+                                <img src="./assets/img/Blue-Cloth-Good.png" alt="White Cloth" class="blue-cloth">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="faqs" class="main-sections">
-            <div class="container">
+        <section id="faqs" class="main-sections relative">
+            <div class="quotations absolute" id="open-quotation">
+                <img src="./assets/img/Quote-01.png" alt="" class="big-quotations">
+            </div>
+            <div class="paws">
+                <img id="first-paw" src="./assets/img/Paw-Combo-01.png" class="block absolute" alt="">
+            </div>
+            <div class="container" id="main-content">
                 <div class="heading">
                     <hr class="small-hr ml-0">
                     <h1 class="font-xl text-uppercase"> Frequently Asked Questions </h1>
@@ -184,6 +195,9 @@
                     </div>
                 </div>
             </div>
+            <div class="paws">
+                <img id="second-paw" src="./assets/img/Paw-Combo-02.png" class="block absolute" alt="">
+            </div>
         </section>
         <section id="testimonials" class="main-sections">
             <div class="container">
@@ -191,43 +205,52 @@
                     <hr class="small-hr mr-0">
                     <h1 class="font-xl text-right text-uppercase"> Testimonials </h1>
                 </div>
-                <div class="row flex-wrap">
-                    <div class="col-4 testimonial px-3">
+                <div class="row flex-wrap flex-center">
+                    <div class="col-4 testimonial px-3 pt-2">
                         <p class="testimony text-justify">
                             Lorem ipsum dolor sit amet, conse cte tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                         </p>
                         <span class="author bold block text-right"> -DEC CENA </span>
                     </div>
-                    <div class="col-4 testimonial px-3">
+                    <div class="col-4 testimonial px-3 pt-2">
                         <p class="testimony text-justify">
                             Lorem ipsum dolor sit amet, conse cte tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                         </p>
                         <span class="author bold block text-right"> -PEARL HARBO </span>
                     </div>
-                    <div class="col-4 testimonial px-3">
+                    <div class="col-4 testimonial px-3 pt-2">
                         <p class="testimony text-justify">
                             Lorem ipsum dolor sit amet, conse cte tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                         </p>
                         <span class="author bold block text-right"> -RICA NYPPS </span>
                     </div>
-                    <div class="col-4 testimonial px-3">
+                    <div class="col-4 testimonial px-3 pt-2">
                         <p class="testimony text-justify">
                             Lorem ipsum dolor sit amet, conse cte tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                         </p>
                         <span class="author bold block text-right"> -LUCA RETTE </span>
                     </div>
-                    <div class="col-4 testimonial px-3">
+                    <div class="col-4 testimonial px-3 pt-2">
                         <p class="testimony text-justify">
                             Lorem ipsum dolor sit amet, conse cte tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                         </p>
                         <span class="author bold block text-right"> -BARD AGLE </span>
                     </div>
                 </div>
-                <div class="quotations" id="close-quotation">
+                
+                <div class="quotations relative pt-10 text-right" id="close-quotation">
+                    <div class="paws">
+                        <img id="third-paw" src="./assets/img/Paw-Combo-03.png" class="block absolute" alt="">
+                    </div>       
+                    <img src="./assets/img/Quote-02.png" class="big-quotations" alt="">
                 </div>
             </div>
         </section>
-        <section id="newsletter" class="main-sections">
+        <section id="newsletter" class="main-sections relative">
+            <div class="paws">
+                <img src="./assets/img/Big-paw-04.png" alt="" class="absolute big-paw">
+                <img src="./assets/img/Small-paw-04.png" alt="" class="absolute small-paw">
+            </div>
             <div class="container">
                 <h1 class="font-xl text-uppercase"> Subscribe to our newsletter </h1>
                 <p class="text-center font-rg"> Stay on trend and be the first in the know.  </p>
@@ -237,24 +260,52 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer class="py-5 relative">
+            <div class="dropdown absolute">
+                <img src="./assets/img/Dropdown-03.png" alt="">
+            </div>
             <div class="container">
-                <div class="row">
+                <hr>
+                <div class="row flex-align-start pt-5">
                     <div id="company" class="footer-nav col-md-3">
                         <h3 class="text-uppercase"> The Company </h3>
                         <ul>
-                            <li></li>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> New Designs </a></li>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> Weekly Insights </a></li>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> Collaborations </a></li>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> Stay in the Loop </a></li>
                         </ul>
                     </div>
                     <div id="team" class="footer-nav col-md-3">
+                        <h3 class="text-uppercase"> The Team </h3>
+                        <ul>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> Meet the Team </a></li>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> Our Designers </a></li>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> The Principals </a></li>
+                        </ul>
                         
                     </div>
                     <div id="fashion" class="footer-nav col-md-3">
+                        <h3 class="text-uppercase"> Our Fashion </h3>
+                        <ul>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> International Research </a></li>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> Digital Solutions </a></li>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> Innovations </a></li>
+                        </ul>
                         
                     </div>
                     <div id="legal" class="footer-nav col-md-3">
+                        <h3 class="text-uppercase"> Legal </h3>
+                        <ul>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> Terms and Conditions </a></li>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> Privacy Policy </a></li>
+                            <li class="pt-1"> <a class="font-light-gray" href="#"> Sitemap </a></li>
+                        </ul>
                         
                     </div>
+                </div>
+                <div class="copyright text-center py-3 bold mt-5">
+                    <span class="year bold"> 2021 </span>© Pet Style. All Rights Reserved.
                 </div>
             </div>
         </footer>

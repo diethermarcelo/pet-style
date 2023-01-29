@@ -57,6 +57,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
 /* Custom Classes */
 .container {
     max-width: 1024px; 
@@ -155,6 +159,10 @@ a {
     margin-top: auto;
 }
 
+.mt-5 {
+    margin-top: 50px;
+}
+
 .mb-auto{
     margin-bottom: auto;
 }
@@ -243,6 +251,17 @@ a {
     padding-top: 30px;
 }
 
+.pt-5{
+    padding-top: 50px;
+}
+
+.pt-7{
+    padding-top: 70px;
+}
+
+.pt-10{
+    padding-top: 100px;
+}
 
 .pb-1{
     padding-bottom: 10px;
@@ -352,7 +371,7 @@ a {
 }
 
 .font-xl{
-    font-size: 4em; 
+    font-size: 3.8em; 
 }
 
 .font-xxl{
@@ -366,6 +385,9 @@ a {
 }
 
 
+.big-quotations {
+    width: 180px;
+}
 /* Navigations */
 
 header {
@@ -375,6 +397,20 @@ header {
     top: 0;
     width: 100%;
     z-index: 10;
+}
+
+header #nav-icon-down {
+    top: -10px;
+}
+
+@media screen and (max-width: 1215px) {
+    header #nav-icon-down {
+        display: none;
+    }
+}
+
+header #nav-icon-down img{
+    height: 75px;
 }
 
 nav {
@@ -442,6 +478,11 @@ section {
 
 #landing-title #landing-title-images img{
     width: 100px;
+    height: 120px;
+}
+
+#landing-title #landing-title-images img.blue-cloth{
+    width: 90px;
 }
 
 #landing-image {
@@ -485,7 +526,7 @@ section {
 
 #about .paws{
     right: 0px;
-    bottom: 100px;
+    bottom: 20px;
     transform: scale(1.2);
     z-index: 0;
 }
@@ -507,6 +548,17 @@ section {
 #trendings{
     background: #DDD;
 }
+
+#trendings .paws .big-paw{
+    left: 0;
+    bottom: 30%;
+}
+
+#trendings .paws .small-paw{
+    right: 0;
+    bottom: 50px;
+}
+
 
 #trendings .title hr{
     margin-right: 0;
@@ -551,7 +603,16 @@ section {
 
 #good .clothes {
     right: -50px;
-    bottom: -100px;
+    bottom: -50px;
+}
+
+#good .clothes img{
+    width: 120px;
+    height: 140px;
+}
+
+#good .clothes img.blue-cloth{
+    width: 100px;
 }
 
 /* FAQs */
@@ -559,10 +620,40 @@ section {
     background: #D6D6D6;
 }
 
+#faqs .quotations#open-quotation {
+    top: -83px;
+}
+
+#faqs .paws #first-paw{
+    right: 0;
+    top: 83px;
+    height: 120px;
+}
+
+#faqs .paws #second-paw{
+    left: 0;
+    bottom: -75px;
+    height: 150px;
+}
+
+
+#faqs #main-content{
+    margin-top: 100px;
+}
+
 /* Testimonials */
 #testimonials {
     background: #D6D6D6
 }
+
+#testimonials .quotations#close-quotation img{
+}
+
+#testimonials .paws #third-paw{
+    left: 100px;
+    height: 100px;
+}
+
 
 /* Newsletter */
 #newsletter{
@@ -571,6 +662,20 @@ section {
 
 #newsletter *{
     color: #FFF;
+}
+
+#newsletter .paws img{
+    transform: scale(0.7)
+}
+
+#newsletter .paws .big-paw{
+    left: -50px;
+    bottom: 30px;
+}
+
+#newsletter .paws .small-paw{
+    right: 0;
+    transform-origin: right;
 }
 
 #newsletter h1 {
@@ -589,6 +694,25 @@ section {
     color: #000;
 }
 
+/* Footer */
+footer {
+    overflow: hidden;
+
+}
+footer .dropdown {
+    top: -10px;
+    left: 30px;
+}
+
+footer .dropdown {
+    transform: scale(0.8);
+    transform-origin: top;
+}
+
+footer hr{
+    height: 7px;
+    background: #000;
+}
 /* Credits */
 
 .credits{
