@@ -12,19 +12,39 @@
     </head>
     <body>
         <header>
+            <div class="burger-container inline-block md-none">
+                <div class="burger-nav">
+                    <button class="burger-icon"> <img src="./assets/img/Burger-menu.png" alt=""> </button>
+                    <div class="nav-items mobile-nav absolute none">
+                        <div class="absolute close p-2">
+                            <img src="./assets/img/Close.png" alt="">
+                        </div>
+                        <nav class="flex-column flex pt-5">
+                            <a href="#landing" class="nav-items py-2 text-center"> Home</a>
+                            <a href="#about" class="nav-items py-2 text-center"> About</a>
+                            <a href="#trendings" class="nav-items py-2 text-center"> Shop</a>
+                            <a href="#newsletter" class="nav-items py-2 text-center"> Contact Us</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
             <div id="nav-icon-down" class="absolute">
                 <img src="./assets/img/Dropdown.png" alt="">
             </div>
-            <div class="container flex flex-between">
-                <nav>
-                    <a href="#landing" class="nav-items"> Home</a>
-                    <a href="#about" class="nav-items"> About</a>
-                    <a href="#trendings" class="nav-items"> Shop</a>
-                    <a href="#newsletter" class="nav-items"> Contact Us</a>
-                </nav>
-                <div id="search-bar" class="flex gap-1 flex-align-center">
-                    <input type="text" id="search-input"/>
-                    <img src="./assets/img/Search.png" id="search-icon">
+            <div class="none md-block desktop-nav">
+                <div class="container flex flex-between">
+                    <nav>
+                        <a href="#landing" class="nav-items"> Home</a>
+                        <a href="#about" class="nav-items"> About</a>
+                        <a href="#trendings" class="nav-items"> Shop</a>
+                        <a href="#newsletter" class="nav-items"> Contact Us</a>
+                    </nav>
+                    <div class="none md-inline-block">
+                        <div id="search-bar" class="flex gap-1 flex-align-center ">
+                            <input type="text" id="search-input"/>
+                            <img src="./assets/img/Search.png" id="search-icon">
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -58,7 +78,7 @@
             <div class="container relative">
                 <hr class="ml-0 small-hr">
                 <div id="company" class="flex flex-between flex-wrap">
-                    <h1 class="font-xl text-uppercase"> About <br/> the company </h1>
+                    <h1 class="font-xl md-font-rg text-uppercase"> About <br/> the company </h1>
                     <img src="./assets/img/Dropdown.png" class="mt-auto pt-3"/> 
                 </div>
                 <p class="text-justify pt-2 pb-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
@@ -78,7 +98,7 @@
                 <div class="title text-center py-5">
                     <div class="inline-block">
                         <hr class="small-hr">
-                        <h1 class="text-uppercase font-xl text-center"> Our Trending Styles </h1>
+                        <h1 class="text-uppercase font-xl md-font-rg text-center"> Our Trending Styles </h1>
                     </div>
                 </div>
                 <div class="content flex flex-wrap">
@@ -136,13 +156,13 @@
         <section id="good" class="main-sections relative">
             <div class="container">
                 <div class="row flex-align-center">
-                    <div class="col col-md-6">
+                    <div class="col-12 col-md-6">
                         <div id="content">
-                            <h1 class="text-justify font-xl text-uppercase"> Look Good, <br/> Feel Good! </h1>
+                            <h1 class="text-justify font-xl md-font-rg text-uppercase"> Look Good, <br/> Feel Good! </h1>
                             <p class="text-justify pt-3"> A growing collection of on trend clothes and accessories for your pets as they step on the spotlight for every special occasion or even just on the daily! </p>
                         </div>
                     </div>
-                    <div class="col col-md-6 relative">
+                    <div class="col-12 col-md-6 relative">
                         <div class="main-img px-3">
                             <img src="./assets/img/Dog-Good.jpg" alt="Good Dog" class="img-responsive">
                             <div class="clothes absolute flex">
@@ -164,31 +184,31 @@
             <div class="container" id="main-content">
                 <div class="heading">
                     <hr class="small-hr ml-0">
-                    <h1 class="font-xl text-uppercase"> Frequently Asked Questions </h1>
+                    <h1 class="font-xl md-font-rg text-uppercase"> Frequently Asked Questions </h1>
                 </div>
                 <div class="faqs">
                     <div class="row flex-wrap">
-                        <div class="faq-container col-4 px-2 py-3">
+                        <div class="faq-container col-md-4 px-2 py-3">
                             <div class="question bold">Lorem ipsum dolor sit amet, </div>
                             <div class="answer text-justify font-light-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
                         </div>
-                        <div class="faq-container col-4 px-2 py-3">
+                        <div class="faq-container col-md-4 px-2 py-3">
                             <div class="question bold">Lorem ipsum dolor sit amet, </div>
                             <div class="answer text-justify font-light-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
                         </div>
-                        <div class="faq-container col-4 px-2 py-3">
+                        <div class="faq-container col-md-4 px-2 py-3">
                             <div class="question bold">Lorem ipsum dolor sit amet, </div>
                             <div class="answer text-justify font-light-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
                         </div>
-                        <div class="faq-container col-4 px-2 py-3">
+                        <div class="faq-container col-md-4 px-2 py-3">
                             <div class="question bold">Lorem ipsum dolor sit amet, </div>
                             <div class="answer text-justify font-light-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
                         </div>
-                        <div class="faq-container col-4 px-2 py-3">
+                        <div class="faq-container col-md-4 px-2 py-3">
                             <div class="question bold">Lorem ipsum dolor sit amet, </div>
                             <div class="answer text-justify font-light-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
                         </div>
-                        <div class="faq-container col-4 px-2 py-3">
+                        <div class="faq-container col-md-4 px-2 py-3">
                             <div class="question bold">Lorem ipsum dolor sit amet, </div>
                             <div class="answer text-justify font-light-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
                         </div>
@@ -203,34 +223,34 @@
             <div class="container">
                 <div class="heading pb-3">
                     <hr class="small-hr mr-0">
-                    <h1 class="font-xl text-right text-uppercase"> Testimonials </h1>
+                    <h1 class="font-xl md-font-rg text-right text-uppercase"> Testimonials </h1>
                 </div>
                 <div class="row flex-wrap flex-center">
-                    <div class="col-4 testimonial px-3 pt-2">
+                    <div class="col-md-4 testimonial px-3 pt-2">
                         <p class="testimony text-justify">
                             Lorem ipsum dolor sit amet, conse cte tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                         </p>
                         <span class="author bold block text-right"> -DEC CENA </span>
                     </div>
-                    <div class="col-4 testimonial px-3 pt-2">
+                    <div class="col-md-4 testimonial px-3 pt-2">
                         <p class="testimony text-justify">
                             Lorem ipsum dolor sit amet, conse cte tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                         </p>
                         <span class="author bold block text-right"> -PEARL HARBO </span>
                     </div>
-                    <div class="col-4 testimonial px-3 pt-2">
+                    <div class="col-md-4 testimonial px-3 pt-2">
                         <p class="testimony text-justify">
                             Lorem ipsum dolor sit amet, conse cte tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                         </p>
                         <span class="author bold block text-right"> -RICA NYPPS </span>
                     </div>
-                    <div class="col-4 testimonial px-3 pt-2">
+                    <div class="col-md-4 testimonial px-3 pt-2">
                         <p class="testimony text-justify">
                             Lorem ipsum dolor sit amet, conse cte tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                         </p>
                         <span class="author bold block text-right"> -LUCA RETTE </span>
                     </div>
-                    <div class="col-4 testimonial px-3 pt-2">
+                    <div class="col-md-4 testimonial px-3 pt-2">
                         <p class="testimony text-justify">
                             Lorem ipsum dolor sit amet, conse cte tur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                         </p>
@@ -252,7 +272,7 @@
                 <img src="./assets/img/Small-paw-04.png" alt="" class="absolute small-paw">
             </div>
             <div class="container">
-                <h1 class="font-xl text-uppercase"> Subscribe to our newsletter </h1>
+                <h1 class="font-xl md-font-rg text-uppercase"> Subscribe to our newsletter </h1>
                 <p class="text-center font-rg"> Stay on trend and be the first in the know.  </p>
                 <div class="forms">
                     <input class="block my-3 mx-auto px-5 py-1" type="email" placeholder="Enter your email address">
@@ -267,7 +287,7 @@
             <div class="container">
                 <hr>
                 <div class="row flex-align-start pt-5">
-                    <div id="company" class="footer-nav col-md-3">
+                    <div id="company" class="footer-nav col-12 text-center col-md-3">
                         <h3 class="text-uppercase"> The Company </h3>
                         <ul>
                             <li class="pt-1"> <a class="font-light-gray" href="#"> New Designs </a></li>
@@ -276,7 +296,7 @@
                             <li class="pt-1"> <a class="font-light-gray" href="#"> Stay in the Loop </a></li>
                         </ul>
                     </div>
-                    <div id="team" class="footer-nav col-md-3">
+                    <div id="team" class="footer-nav col-12 text-center col-md-3">
                         <h3 class="text-uppercase"> The Team </h3>
                         <ul>
                             <li class="pt-1"> <a class="font-light-gray" href="#"> Meet the Team </a></li>
@@ -285,7 +305,7 @@
                         </ul>
                         
                     </div>
-                    <div id="fashion" class="footer-nav col-md-3">
+                    <div id="fashion" class="footer-nav col-12 text-center col-md-3">
                         <h3 class="text-uppercase"> Our Fashion </h3>
                         <ul>
                             <li class="pt-1"> <a class="font-light-gray" href="#"> International Research </a></li>
@@ -294,7 +314,7 @@
                         </ul>
                         
                     </div>
-                    <div id="legal" class="footer-nav col-md-3">
+                    <div id="legal" class="footer-nav col-12 text-center col-md-3">
                         <h3 class="text-uppercase"> Legal </h3>
                         <ul>
                             <li class="pt-1"> <a class="font-light-gray" href="#"> Terms and Conditions </a></li>
@@ -312,5 +332,6 @@
         <div class="credits">
             <a href="http://www.freepik.com">Designed by Freepik</a>
         </div>
+        <script src="./assets/js/script.js"> </script>
     </body>
 </html>

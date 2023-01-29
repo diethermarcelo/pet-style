@@ -103,6 +103,10 @@ ul {
         flex-grow: 1;
         flex-basis: 0;
     }
+    
+    .col-md-4{
+        flex-basis: 33.3%;
+    }
 
     .col-md-6{
         flex-basis: 50%;
@@ -310,6 +314,10 @@ ul {
     display: block;
 }
 
+.none {
+    display: none;
+}
+
 .flex{
     display: flex;
 }
@@ -388,6 +396,34 @@ ul {
 .big-quotations {
     width: 180px;
 }
+
+@media screen and (max-width: 576px){
+    .md-font-rg{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 576px){
+    .md-inline-block {
+        display: inline-block;
+    }
+
+    .md-block {
+        display: block;
+    }
+
+    .md-none{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .lg-inline-block {
+        display: inline-block;
+    }
+}
+
+
 /* Navigations */
 
 header {
@@ -397,6 +433,14 @@ header {
     top: 0;
     width: 100%;
     z-index: 10;
+}
+
+header .burger-container .burger-nav button {   
+    background: 0;
+    border: 0;
+}
+header .burger-container .burger-nav button img {   
+    width: 40px;
 }
 
 header #nav-icon-down {
@@ -413,12 +457,12 @@ header #nav-icon-down img{
     height: 75px;
 }
 
-nav {
+.desktop-nav nav {
     display: flex;
     gap: 30px;
 }
 
-nav .nav-items {
+.desktop-nav nav .nav-items {
     color: #FFF;
     text-transform: uppercase;
 }
@@ -439,6 +483,28 @@ nav .nav-items {
     right: 0;
 }
 
+@media screen and (max-width: 576px){
+    .mobile-nav{
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: #000;
+    }
+    
+    .mobile-nav * {
+        color: #FFF;
+    }
+    
+    .mobile-nav .close {
+        right: 0;
+    }
+
+    .mobile-nav .close img {
+        width: 30px;
+    }
+}
+
 /* Section */
 
 section {
@@ -448,8 +514,9 @@ section {
 .main-sections{
     display: flex;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 120px;
     min-height: 100vh;
+    /* overflow: hidden; */
 }
 
 /* Landing */
@@ -461,9 +528,6 @@ section {
     display: flex;
 }
 
-#landing-title {
-
-}
 
 #landing-title h1 {
     text-transform: uppercase;
@@ -516,6 +580,16 @@ section {
     padding: 5px 20px;
 }
 
+
+@media screen and (max-width: 992px){
+    #landing-title {
+        margin-top: auto;
+    }    
+
+    #landing-content .paws {
+        justify-content: flex-start;
+    }
+}
 
 /* About */
 #about {
@@ -617,6 +691,7 @@ section {
 
 /* FAQs */
 #faqs{
+    overflow:visible;
     background: #D6D6D6;
 }
 
