@@ -1,0 +1,477 @@
+/* Configurations */
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('/assets/fonts/Poppins/Poppins-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('/assets/fonts/Poppins/Poppins-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url('/assets/fonts/Poppins/Poppins-ExtraBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Elements */
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins-Regular";
+    z-index: 1;
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins-ExtraBold"
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Custom Classes */
+.container {
+    max-width: 1024px; 
+    margin: 0 auto;
+}
+
+.row {    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row .col{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+
+.col-6{
+    flex-basis: 50%;
+}
+
+.col-12{
+    flex-basis: 100%;
+}
+ 
+@media (min-width: 576px) {
+    .row .col-sm{
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .row .col-md{
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    .col-md-6{
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .row .col-lg{
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
+
+.gap-1{
+    gap: 10px;
+}
+
+.gap-2{
+    gap: 20px;
+}
+
+.gap-3{
+    gap: 30px;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mb-auto{
+    margin-bottom: auto;
+}
+
+.py-1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.py-2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.py-3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.py-4{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.py-5{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.px-1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.px-2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.px-3{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.px-4{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.px-5{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.pt-1{
+    padding-top: 10px;
+}
+
+.pt-2{
+    padding-top: 20px;
+}
+
+.pt-3{
+    padding-top: 30px;
+}
+
+
+.pb-1{
+    padding-bottom: 10px;
+}
+
+.pb-2{
+    padding-bottom: 20px;
+}
+
+.pb-3{
+    padding-bottom: 30px;
+}
+
+.pb-10{
+    padding-bottom: 100px;
+}
+
+
+.bold {
+    font-family: "Poppins-Bold"
+}
+
+.img-responsive{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-center{
+    justify-content: center
+}
+
+.flex-end{
+    justify-content: flex-end
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-uppercase{
+    text-transform: uppercase
+}
+
+.font-lg{
+    font-size: 2em; 
+}
+
+.font-xl{
+    font-size: 4em; 
+}
+
+.font-xxl{
+    font-size: 5em; 
+}
+
+.small-hr{
+    width: 100px;
+    height: 10px;
+    background: #000;
+}
+
+
+/* Navigations */
+
+header {
+    padding: 30px 30px 20px;
+    background: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav .nav-items {
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+#search-bar {
+    position: relative;
+}
+
+#search-bar #search-input {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #FFF;
+    padding: 5px 0;
+}
+
+#search-bar #search-icon {
+    position: absolute;
+    right: 0;
+}
+
+/* Section */
+
+section {
+    padding: 75px 50px;
+}
+
+.main-sections{
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+/* Landing */
+#landing {
+    background: #EDEDED;
+}
+
+#landing-container {
+    display: flex;
+}
+
+#landing-title {
+
+}
+
+#landing-title h1 {
+    text-transform: uppercase;
+    border-bottom: 10px solid #000;
+    line-height: .9
+}
+
+#landing-title p{
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+#landing-title #landing-title-images img{
+    width: 100px;
+}
+
+#landing-image {
+    margin: 0 10px;
+}
+
+#landing-image img{
+    width: 100%;
+}
+
+#landing-content h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+}
+
+#landing-content h2 span{
+    float: right;
+}
+
+#landing-content p {
+    text-align: justify;
+}
+
+#landing-content button {
+    text-transform: uppercase;
+    background: #FFF;
+    font-family: "Poppins-SemiBold";
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+
+
+/* About */
+#about {
+    background: #DDD;
+    overflow: hidden;
+}
+
+
+#about .paws{
+    right: 0px;
+    bottom: 100px;
+    transform: scale(1.2);
+    z-index: 0;
+}
+
+
+#company {
+
+}
+
+#company h1 {
+    line-height: 1;
+}
+
+#company img {
+}
+
+/* Trendings */
+
+#trendings{
+    background: #DDD;
+}
+
+#trendings .title hr{
+    margin-right: 0;
+}
+
+.trend-dog-container:nth-child(odd){
+    margin-bottom: auto;
+}
+
+.trend-dog-container:nth-child(even){
+    margin-top: 100px;
+}
+
+.trend-dog .image-container{
+
+}
+
+.trend-dog .half-frame{
+    top: -21px;
+    left: -21px;
+    z-index: 0;
+}
+
+.trend-dog .image-container .img-main{
+    z-index: 1;
+    position: relative;
+}
+
+/* Good */
+#good {
+    background: #F1F1F1
+}
+
+/* Credits */
+
+.credits{
+    position: fixed;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+}
